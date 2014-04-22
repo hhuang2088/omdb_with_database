@@ -1,0 +1,12 @@
+<h1> Hello </h1>
+<% @movies.each do |movie| %>
+	<li>
+		<a href="/movie/<%=movie["title"]%>"> 
+			<%= movie["title"] %> <%=movie["year"] %>
+		</a>
+	</li>
+<% end %>
+
+<form action="/" method="get">
+  <input type="submit"/>
+</form>
